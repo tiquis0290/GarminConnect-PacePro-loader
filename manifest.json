@@ -11,7 +11,7 @@
             }
         }
     },
-    "description": "Adds a button to load custom PacePro strategies on Garmin Connect course detail views",
+    "description": "Adds a button to load custom PacePro strategies on Garmin Connect course detail view.",
     "permissions": [],
     
     "host_permissions": [
