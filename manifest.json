@@ -1,20 +1,26 @@
 {
     "manifest_version": 3,
-    "name": "Custom Website Button",
+    "name": "GarminConnect PacePro loader",
     "version": "1.0.0",
-    "description": "Adds my custom button to a target website",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "CustomPaceProLoader@maslowski.cz",
+            "data_collection_permissions": {
+                "required": ["websiteContent"],
+                "optional": []
+            }
+        }
+    },
+    "description": "Adds a button to load custom PacePro strategies on Garmin Connect course detail views",
     "permissions": [],
+    
     "host_permissions": [
-        "https://connect.garmin.com/app/course/*",
-        "https://connect.garmin.com/app/course",
-        "https://connect.garmin.com/app/home"
+        "https://connect.garmin.com/"
     ],
     "content_scripts": [
         {
             "matches": [
-                "https://connect.garmin.com/app/course/*",
-                "https://connect.garmin.com/app/course",
-                "https://connect.garmin.com/app/home"
+                "https://connect.garmin.com/*"
             ],
             "js": [
                 "content.js"
