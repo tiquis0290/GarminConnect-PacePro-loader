@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Website Button",
+    "version": "1.0.0",
+    "description": "Adds my custom button to a target website",
+    "permissions": [],
+    "host_permissions": [
+        "https://connect.garmin.com/app/course/*",
+        "https://connect.garmin.com/app/course",
+        "https://connect.garmin.com/app/home"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://connect.garmin.com/app/course/*",
+                "https://connect.garmin.com/app/course",
+                "https://connect.garmin.com/app/home"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}
