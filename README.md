@@ -1,0 +1,1 @@
+Simple plugin for firefox to add button for loading custom pace pro strategy on garmin course detail view
