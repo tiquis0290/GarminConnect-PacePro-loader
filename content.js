@@ -98,7 +98,7 @@ async function main() {
     });
 
     panel.querySelector("#pbs-create").addEventListener("click", async () => {
-      window.open("https://gpx.martinkobelka.cz/", "_blank");
+      window.open("https://gpx.maslowski.cz/", "_blank");
     });
 
 
